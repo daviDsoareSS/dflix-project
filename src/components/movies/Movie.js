@@ -25,7 +25,7 @@ function Movie(){
   useEffect(()=>{
     const movieURL = `${API}${id}?api_key=${APIKey}&language=pt-BR`
     getMovie(movieURL)
-  },[])
+  },[id])
 
   return(
     <div className={styles.containerMovie}>
@@ -37,7 +37,7 @@ function Movie(){
             <small className={styles.dataLancamento}>{movie.release_date.slice(0,4)}</small>
             <small>{movie.runtime} min</small>
             <p className={styles.votesMovie}><svg className={styles.vote} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" fill='yellow'/></svg>{movie.vote_average}</p>
-            <p>{movie.overview == 0 && <p>Texto não encontrado</p>}</p>
+            <p>{movie.overview === 0 && <p>Texto não encontrado</p>}</p>
             <p className={styles.overviewMovie}>{movie.overview}</p>
             <p className={styles.billedWithMovie}>Orçamento<span>{formatCurrency(movie.budget)}</span></p>
             <p className={styles.billedWithMovie}>Receita<span>{formatCurrency(movie.revenue)}</span></p>

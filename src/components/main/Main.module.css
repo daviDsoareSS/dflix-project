@@ -1,0 +1,85 @@
+main{
+  width: 100%;
+  margin-bottom: 10vw;
+}
+.wallpaperHome{
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  width: 100vw ;
+}
+.containerMain{
+  color: white;
+  width: 40%;
+  padding: 3vw;
+  padding-top: 15vw;
+  display: block;
+}
+.containerMain a{
+  text-decoration: none;
+  color: white;
+}
+.containerMain img{
+  width: 25rem;
+}
+.containerMain p{
+  text-align: justify;
+  margin-bottom: 1vw;
+}
+.containerMain svg{
+  width: 20px;
+  margin-right: 5px;
+}
+.containerMain .containerButtons{
+  display: flex;
+}
+.containerMain button{
+  white-space: nowrap;
+  background-color: #000c18;
+  align-items: center;
+  display: flex;
+  border: 1px solid #011526;
+  color: white;
+  font-weight: medium;
+  font-size: 15px;
+  border-radius: 7px;
+  margin-right: 1vw;
+  cursor: pointer;
+  padding: .8vw 5vw;
+}
+
+.containerMain button:hover{
+  font-weight: bold;
+  border: 1px solid gray;
+}
+@media(max-width:800px){
+  .wallpaperHome{
+    object-fit: cover;
+    object-position: -170vw;
+    height: 100%;
+    opacity: .20;
+    
+  }
+  .containerMain{
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 8rem;
+    width: 80%;
+  }
+  .containerMain img{
+    width: 18rem;
+  }
+  .containerMain p{
+    font-size: 20px;
+  }
+  .containerMain .containerButtons{
+    display: block;
+  }
+  .containerMain .containerButtons button{
+    justify-content: center;
+    margin-bottom: 2vw;
+    width: 100%;
+    padding: 3vw ;
+    font-size: 18px;
+  }
+}

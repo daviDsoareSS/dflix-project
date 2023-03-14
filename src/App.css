@@ -1,38 +1,82 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  overflow-x: hidden;
+  background: linear-gradient(90.06deg, #011526 0.04%, rgb(3, 76, 139) 99.93%);
+}
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body::-webkit-scrollbar-track {
+  background: #91BBF2;        /* color of the tracking area */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar-thumb {
+  background-color: #023059;    /* color of the scroll thumb */
+  border-radius: 10px;       /* roundness of the scroll thumb */
+  border: 1px solid #91BBF2;  /* creates padding around scroll thumb */
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.searchForm{
+  z-index: -99;
+  display: none;
+  position: absolute;
+  right: 5rem;
+  top: 0rem;
+  height: 9rem;
+  background-color: #011526;
+}
+.searchForm.active{
+  padding-top: 3rem;
+  animation-name: slideTop;
+  animation-duration: 350ms;
+  transition: 1s;
+  display: block;
+}
+.searchForm form{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 1vw;
+}
+.searchForm form p{
+  font-size: 12px;
+}
+.searchForm form input{
+  font-size: 12px;
+  border: none;
+  background-color: rgb(219, 216, 255);
+  padding: 0.4vw;
+  margin-bottom: 5px;
+  border-radius: 7px;
+  width: 15rem;
+}
+.searchForm form input:focus{
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+.searchForm form input::placeholder{
+  font-size: 12px;
+  font-style: italic;
+  color: #01152681;
+}
+.searchForm form button{
   color: white;
+  background: rgb(1,21,38);
+  background: linear-gradient(90deg, rgba(1,21,38,1) 0%, rgba(2,48,89,1) 50%, rgba(1,21,38,1) 100%);  border-radius: 7px;
+  border: 1px solid rgba(2,48,89,1) !important;
+  padding: 0.5vw;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes slideTop{
+  from{
+      transform: translate3d(0px,-100px,0);
+      opacity: 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  to{
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }    
 }

@@ -1,0 +1,109 @@
+nav{
+    position: fixed;
+    padding: .3rem 3vw .3rem 3vw;
+    color: white;    
+    width: 100vw;
+    height: 3.8rem !important;
+    transition: .5s;
+    z-index: 99;
+}
+.active{
+    background-color: #011526;
+}
+nav .navTop{
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .navTop .logo{
+    width: 100px;
+}
+nav .navTop .menu{
+    cursor: pointer;
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    width: 30px;
+}
+nav .navTop .search{
+    width: 20px;
+}
+nav .navTop button{
+    border: none;
+    float: left;
+    background-color: transparent;
+    cursor: pointer;
+}
+nav .navTop button:focus{
+    outline: thin dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+    outline-offset: 0px;
+}
+nav .navTop li{
+    margin: 0 0 0vw 3vw;
+    float: left;
+    font-size: 12px;
+}
+nav .navTop .rightNav a{
+    text-decoration: none;
+    color: white;
+}
+nav .navTop .menu:hover .sidebarActive{
+    visibility: collapse;
+}
+.sidebar{
+    z-index: 2;
+    background-color: #011526;
+    left: 0;
+    position: absolute;
+    width: 15rem;
+}
+.sidebar ul{
+    height: 100%;
+    list-style: none;
+    display: block;
+}
+.sidebar ul svg{
+    width: 20px;
+    margin-right: 10px;
+}
+.sidebar ul li{
+    background-color: #023059;
+    align-items: center;
+    display: flex;
+    padding: 1vw;
+    margin: 1vw;
+    border-radius: 10px;
+    padding-left: 3vw;
+    text-align: left;
+    
+}
+.sidebar ul a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar ul li:hover{
+    cursor: pointer;
+    background-color: #00203b;
+}
+.closeMenu {
+    width: 100vw;
+    height: 100vw;
+    background-color: rgba(0,0,0,.2);
+    position: fixed;
+    top: -3.8rem;
+    left: 0;
+    z-index: -3;
+}
+
+@media(max-width:800px){
+    .sidebar{
+        padding: 4vw;
+        width: 100%;
+    }
+    .sidebar ul li{
+        padding: 3vw;
+        margin-bottom: 2vw;
+    }
+}

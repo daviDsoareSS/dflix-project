@@ -1,0 +1,135 @@
+.SectionPopular{
+  padding-top: 0 !important;
+}
+section{
+  padding-top: 5rem;
+  animation-name: slideRight;
+  animation-duration: 1s;
+  margin: 0vw 13vw 0vw 13vw;
+  color: white;
+}
+section .containerSection{
+  display: flex;
+}
+section .containerSection h1{
+  margin: 0;
+}
+section .containerFilms{
+  margin-top: 2vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  row-gap: 5rem;
+  gap: 1vw;
+}
+section .containerFilms .filmCard{
+  margin-bottom: 5rem;
+  height: 20rem;
+}
+section .containerFilms .filmCard:hover{
+  transform:scale3d(1.11 , 1.11 , 2.1);
+  transition: 0.3s;
+}
+section .containerFilms .filmCard img{
+  border-radius: 7px;
+  width: 100% !important;
+}
+section .containerFilms .filmCard:hover img{
+  border: 1px solid white;
+  box-shadow: -5px -20px 30px rgb(0, 0, 0) !important;
+  opacity: .25;
+}
+section .containerFilms .filmCard p{
+  text-align: center;
+  font-size: 12px;
+  font-weight: normal;
+}
+section .containerFilms .filmCard a{
+  text-decoration: none;
+  color: white;
+}
+section .containerFilms .filmCard:hover p{
+  display: none;
+}
+section .containerFilms .filmCard .informationFilm{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 1.5vw;
+  display: none;
+}
+section .containerFilms .filmCard:hover .informationFilm{
+  display: block;
+}
+section .containerFilms .filmCard .informationFilm h2{
+  text-shadow: 5px 10px 20px #000000;
+  font-size: 16px;
+  font-weight: bolder;
+}
+section .containerFilms .filmCard .informationFilm p{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  font-size: 10px;
+  margin-bottom: .5vw;
+}
+section .containerFilms .filmCard .informationFilm span{
+  font-size: 12px;
+  margin-bottom: 1vw;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+section .containerFilms .filmCard .informationFilm .vote{ 
+  width: 12px;
+}
+
+section .containerFilms .filmCard .informationFilm svg{
+  width: 20px;
+}
+section .containerFilms .filmCard .informationFilm .buttonFilmResponsive{
+  display: none;
+}
+
+@keyframes slideRight{
+  from{
+      transform: translate3d(-200px,0px,0);
+      opacity: 0;
+  }
+  to{
+      transform: translate3d(0,0,0);
+      opacity: 1;
+  }    
+}
+@media(max-width: 800px){
+  section{
+    margin: 0vw 8vw 0vw 8vw;
+  }
+  section .containerSection h1{
+    margin-bottom: 5vw;
+  }
+  section .containerFilms{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0rem !important;
+    gap: 2vw;
+  }
+  section .containerFilms .filmCard{
+    margin-bottom: 0rem;
+  }
+  section .containerFilms .filmCard .informationFilm{
+    padding: 3vw;
+    width: 100%;
+    top: 10%;
+  }
+  section .containerFilms .filmCard .informationFilm span{
+    display: none;
+  }
+  section .containerFilms .filmCard .informationFilm .buttonFilmResponsive{
+    bottom: 0;
+    display: block;
+  }
+  section .containerFilms .filmCard .informationFilm .buttonFilmResponsive svg{
+    width: 40px;
+  }
+  
+}

@@ -1,7 +1,4 @@
 import styles from './Favorites.module.css'
-import { useState, useEffect } from 'react';
-
-import { APIKey } from '../../config/key';
 
 
 function FavoritesFilms(){  

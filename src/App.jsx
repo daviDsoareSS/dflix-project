@@ -4,7 +4,6 @@ import Navbar from './components/nav/Navbar';
 import Main from './components/main/Main';
 
 import { Outlet, Routes, Route} from 'react-router-dom';
-import FavoritesFilms from './components/favorites/FavoritesFilms';
 
 
 function App() {

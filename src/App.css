@@ -53,13 +53,13 @@ body::-webkit-scrollbar-thumb {
   font-size: 12px;
 }
 .searchForm form input{
-  font-size: 12px;
+  font-size: 15px;
   border: none;
   background-color: rgb(255, 255, 255);
-  padding: 0.4vw;
+  padding: 0.7vw;
   margin-bottom: 5px;
   border-radius: 7px;
-  width: 15rem;
+  width: 20rem;
 }
 .searchForm form input:focus{
   box-shadow: 0 0 0 0;

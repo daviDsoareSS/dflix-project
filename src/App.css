@@ -77,9 +77,6 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid rgba(2,48,89,1) !important;
   padding: 0.5vw;
 }
-#root{
-
-}
 
 @keyframes slideTop{
   from{

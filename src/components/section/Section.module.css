@@ -51,8 +51,10 @@ section .containerFilms .filmCard:hover p{
   display: none;
 }
 section .containerFilms .filmCard .informationFilm{
+  min-height: 100%;
+  padding-bottom: 1vw;
   position: absolute;
-  top: 50%;
+  top: 20%;
   width: 100%;
   padding: 1.5vw;
   display: none;

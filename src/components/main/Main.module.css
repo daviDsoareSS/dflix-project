@@ -56,8 +56,8 @@ main{
   .wallpaperHome{
     object-fit: cover;
     object-position: -170vw;
-    height: 100%;
-    opacity: .20;
+    height: 100vh;
+    opacity: .40;
     
   }
   .containerMain{
@@ -70,6 +70,9 @@ main{
     width: 18rem;
   }
   .containerMain p{
+    font-size: 14px !important;
+    text-align: justify;
+    text-shadow: 5px 10px 20px #000000;
     font-size: 20px;
   }
   .containerMain .containerButtons{
@@ -79,7 +82,10 @@ main{
     justify-content: center;
     margin-bottom: 2vw;
     width: 100%;
-    padding: 3vw ;
-    font-size: 18px;
+    padding: 2vw ;
+    font-size: 14px;
+  }
+  .containerMain .containerButtons button svg{
+    width: 15px;
   }
 }

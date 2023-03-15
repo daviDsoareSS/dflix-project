@@ -54,7 +54,7 @@ main{
 }
 @media(max-width:800px){
   main{
-    padding-top: 3rem;
+    padding-top: 4rem;
   }
   .wallpaperHome{
     object-fit: cover;

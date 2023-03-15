@@ -53,6 +53,9 @@ main{
   border: 1px solid gray;
 }
 @media(max-width:800px){
+  main{
+    padding-top: 3rem;
+  }
   .wallpaperHome{
     object-fit: cover;
     object-position: -200vw;

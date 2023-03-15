@@ -57,7 +57,7 @@ nav .navTop .menu:hover .sidebarActive{
     background-color: #011526;
     left: 0;
     position: absolute;
-    width: 15rem;
+    min-width: 15rem;
 }
 .sidebar ul{
     height: 100%;

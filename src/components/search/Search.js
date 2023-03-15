@@ -29,7 +29,7 @@ function Search(){
     getSearchedMovies(searchWithQueryURL)
   }, [query])
 
-
+  
   return(
     <section class="containerSearch" id="upcoming">
     <div className={styles.containerSection}>

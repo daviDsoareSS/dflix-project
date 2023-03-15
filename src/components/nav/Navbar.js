@@ -27,6 +27,7 @@ const Navbar = () => {
 
     function searchClick(){
         document.getElementById("searchForm").classList.toggle("active");
+        document.getElementById('inputSearch').focus();
         setNavBar(true);
     }
 
@@ -51,6 +52,7 @@ const Navbar = () => {
                     <div class="searchForm" id="searchForm">
                         <form onSubmit={handleSubmit}>
                             <input 
+                            id="inputSearch"
                             type="text" 
                             placeholder='Pesquise o nome do filme' 
                             onChange={(e)=> setSearch(e.target.value)}

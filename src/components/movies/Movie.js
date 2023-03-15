@@ -41,8 +41,6 @@ function Movie(){
             <p className={styles.overviewMovie}>{movie.overview}</p>
             <p className={styles.billedWithMovie}>Orçamento<span>{formatCurrency(movie.budget)}</span></p>
             <p className={styles.billedWithMovie}>Receita<span>{formatCurrency(movie.revenue)}</span></p>
-           
-
           </div>
         </div>
       )}

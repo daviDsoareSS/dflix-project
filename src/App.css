@@ -80,3 +80,20 @@ body::-webkit-scrollbar-thumb {
       opacity: 1;
   }    
 }
+@media(max-width:800px){
+  .searchForm.active{
+    padding: 1vw;
+    width: 100%;
+    right: 0;
+    height: 12rem;
+    padding-top: 5rem;
+  }
+  .searchForm form input{
+    font-size: 15px;
+    width: 100%;
+    padding: 0.8rem;
+  }
+  .searchForm form button{
+    padding: 0.5rem;
+  }
+}

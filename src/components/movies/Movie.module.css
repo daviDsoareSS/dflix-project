@@ -57,3 +57,30 @@
   font-size: 12px;
   font-weight: normal;
 }
+@media(max-width:800px){
+  .containerMovie{
+    margin: 0vw 5vw 0vw 5vw;
+  }
+  .cardMovie{
+    padding: 5vw;
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+  }
+  .cardMovie img{
+    object-fit: cover;
+    height: 20rem;
+  } 
+  .containerTextMovie {
+    padding-top: 10px;
+    padding-left: 0 !important;
+  }
+  .containerTextMovie h1{
+    font-size: 20px !important;
+  }
+  .containerTextMovie p{
+    padding-left: 0 !important;
+    width: 100%;
+    text-align: justify;
+  }
+}

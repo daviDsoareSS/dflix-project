@@ -106,4 +106,9 @@ nav .navTop .menu:hover .sidebarActive{
         padding: 3vw;
         margin-bottom: 2vw;
     }
+    .closeMenu {
+        width: 100vw;
+        height: 200vh !important;
+        
+    }
 }

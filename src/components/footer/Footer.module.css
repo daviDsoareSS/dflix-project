@@ -33,6 +33,7 @@ footer a{
   justify-content: center;
 }
 .containerFooter p{
+  width: 100%;
   font-size: 13px;
   margin-bottom: 0;
 }
@@ -42,4 +43,12 @@ footer a{
 .containerFooter span{
   margin-left: 3px;
   font-weight: bolder;
+}
+@media(max-width:800px){
+  footer{
+    margin-top: 5rem;
+  }
+  footer p{
+    width: 80%;
+  }
 }

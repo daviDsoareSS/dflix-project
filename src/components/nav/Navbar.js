@@ -48,7 +48,6 @@ const Navbar = () => {
                 <Link to="/"><a href='#main'><li><img className={styles.logo} src={Logo} alt="Logo DFLIX"></img></li></a></Link>
                 <div className={styles.rightNav}>
                     <button onClick={searchClick} id="search"><img className={styles.search} src={Search} alt="Procurar"></img></button>
-                    <Link to="Favorites"><li>Favoritos</li></Link>
                     <div class="searchForm" id="searchForm">
                         <form onSubmit={handleSubmit}>
                             <input 

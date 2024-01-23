@@ -53,7 +53,7 @@ const Navbar = () => {
                             <input 
                             id="inputSearch"
                             type="text" 
-                            placeholder='Pesquise o nome do filme' 
+                            placeholder='Pesquise o nome do filme...' 
                             onChange={(e)=> setSearch(e.target.value)}
                             value={search}
                             />

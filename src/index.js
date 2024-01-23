@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import FavoritesFilms from './components/favorites/FavoritesFilms'
 import SectionPopularFilms from './components/section/SectionPopularFilms';
 import SectionUpcoming from './components/section/SectionUpcoming';
 import SectionTopRated from './components/section/SectionTopRated';
@@ -27,10 +26,6 @@ const router = createBrowserRouter([
       {
         path: "TopRated",
         element: <SectionTopRated />,
-      },
-      {
-        path: "Favorites",
-        element: <FavoritesFilms />,
       },
       {
         path: "search",
